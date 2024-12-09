@@ -1,0 +1,58 @@
+@import url('highlight.js/styles/github.css');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,300;1,300&display=swap');
+
+.code-block {
+  background-color: #eee8e8;
+  color: #444749;
+  border-radius: 5px;
+}
+
+.code-title {
+  color: #eee8e8;
+  display: flex;
+  justify-content: space-between;
+  background-color: #859aa8;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.code {
+  padding: 0px 10px 10px;
+  font-size: 16px;
+  font-family: 'Fira Code', monospace;
+}
+
+.copy-button {
+  color: #0e0c64;
+  border-radius: 25px;
+  padding: 1px 5px;
+  border: 1px solid #eee8e8;
+}
+
+.message {
+  color: #0e0c64;
+  margin: 0px;
+  padding: 3px 20px;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.message-error {
+  background-color: #f55151;
+}
+
+.message-success {
+  background-color: #42b883;
+  color: #ffee00;
+}
+
+table {
+  border-collapse: collapse;
+  /* width: 100%; */
+  margin-bottom: 20px;
+}
+th,
+td {
+  border: 1px solid #777676;
+  padding: 0px 10px;
+}
