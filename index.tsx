@@ -9,14 +9,14 @@ import './index.css';
 
 interface MarkdownRenderProps {
   repoName: string;
+  filePath: string;
 }
 
-function MarkdownRender({ repoName }: MarkdownRenderProps): JSX.Element {
+function MarkdownRender({ repoName, filePath }: MarkdownRenderProps): JSX.Element {
   const [markdownContent, setMarkdownContent] = useState('');
   const token = process.env.REACT_APP_TOKEN_API_GITHUB;
   const userGithub = process.env.REACT_APP_USER_GITHUB;
-  console.log(repoName);
-  const filePath = 'README.md';
+  //const filePath = 'README.md';
 
   const url = `https://api.github.com/repos/${userGithub}/${repoName}/contents/${filePath}`;
 
