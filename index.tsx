@@ -12,7 +12,7 @@ interface MarkdownRenderProps {
   filePath: string;
 }
 
-function MarkdownRender({ repoName, filePath }: MarkdownRenderProps): JSX.Element {
+const MarkdownRender = ({ repoName, filePath }: MarkdownRenderProps): JSX.Element => {
   const [markdownContent, setMarkdownContent] = useState('');
   const token = process.env.REACT_APP_TOKEN_API_GITHUB;
   const userGithub = process.env.REACT_APP_USER_GITHUB;
@@ -70,6 +70,6 @@ function MarkdownRender({ repoName, filePath }: MarkdownRenderProps): JSX.Elemen
       </ReactMarkdown>
     </div>
   );
-}
+};
 
 export default MarkdownRender;

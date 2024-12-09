@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { Node } from 'typescript';
 import './CodeBlock.css';
 
-export interface CodeBlockProps {
+export interface CodeBlockProps extends React.HTMLAttributes<HTMLPreElement> {
   node?: Node | any;
-  inline?: boolean;
   className?: string;
   children?: React.ReactNode;
 }
@@ -15,7 +14,7 @@ interface ChildrenElement {
   value?: string;
 }
 
-const CodeBlock: React.FC<CodeBlockProps> = ({ node, /*inline,*/ className, children, ...props }) => {
+const CodeBlock: React.FC<CodeBlockProps> = ({ node, className, children, ...props }) => {
   const [message, setMessage] = useState<string | null>(null);
   const [statusMessage, setStatusMessage] = useState<string>('message-success');
   const [code, setCode] = useState<string>('');

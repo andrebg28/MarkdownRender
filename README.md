@@ -38,7 +38,14 @@ import MarkdownRender from './MarkdownRender';
 Use o componente `MarkdownRender` em seu componente React:
 
 ```tsx
-<MarkdownRender markdownFile="caminho/para/arquivo.md" />
+<MarkdownRender repoName="nome-do-repositório" filePath="README.md" />
+// Como nos exemplos abaixo:
+<Route path="/MarkdownRender" element={<MarkdownRender repoName="MarkdownRender" filePath="README.md" />} />
+// Ou
+<article className="Home-article">
+    <MarkdownRender repoName="aprendendo-reactjs-nextjs"
+      filePath="/src/component/hooks/_useState/README.md"/>
+</article>
 ```
 
 ## Personalização
